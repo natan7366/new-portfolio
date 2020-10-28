@@ -1,0 +1,370 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> cobimr@protonmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+
+    <!-- Put here your site title -->
+    <title>Nathan Barel | Developer</title>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <!-- Required librarys -->
+    <!-- <link rel="stylesheet" href="./style/tech styles.css"/> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      #dev-story{
+        font-size: 2em;
+      }
+      .techstack{
+        background-color: rgba(0,0,0,0.1);
+        padding-top: 50px;
+        padding-bottom: 120px;
+      }
+      .grid-container {
+        display: grid;
+        grid-gap: 10px 60px;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 3fr));
+        padding: 5px 40px 100px 40px ;
+      }
+
+      .techitem {
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+       }
+
+       .techitem .logo {
+          height: 80px;
+          width: 80px;
+       }
+
+       .techitem .logo:hover {
+          box-shadow: 2px 2px  rgba(0, 0, 0, 0.2);
+          transform: scale(1.2);
+          transition: 0.5s ;
+          cursor: pointer;
+       }
+
+      .techitem .title {
+          color: gray;
+          font-weight: bold;
+          width: min-content;
+          font-size: 1.6em;
+          display: flex;
+          align-items: center;
+          /*text-shadow: 2px 2px 5px gray;*/
+          font-family: Consolas, monaco, monospace,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+      }
+
+      @media only screen and (max-width: 1025px) {
+        .techitem {
+            justify-content: space-around;
+        }
+        .grid-container {
+            padding-bottom: 0px;
+        }
+        .techstack{
+           padding-bottom: 25px;
+        }
+      }
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+
+    <!-- Remove this script once you setup your custom portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <div id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title" class="load-hidden">
+          Hi, my name is <span class="text-color-main">Nathan Barel</span>
+          <br />
+          I'm the developer you need.
+        </h1>
+        <p class="hero-cta" class="load-hidden">
+          <a class="cta-btn cta-btn--hero" href="#about">Read More</a>
+        </p>
+      </div>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          About me
+        </h2>
+        <div class="row about-wrapper">
+          <div  class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img
+                class="img-fluid rounded shadow-lg my_pic"
+                height="auto"
+                width="300px"
+                src="./assets/mypic.png"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+              <p  id="dev-story" class="about-wrapper__info-text">
+                I am a Bachelor of Applied Physics / Electro-Optic Engineering. After several years of working in the field, I decided to implement my love for programming area by making a professional endorsement by independent study courses.<br>
+                Familiar with python 3, javascript, react, html & css (grid + flexbox), Node.js, Express.js, PostgreSQL, Git etc.<br> 
+                I have an analytical thinking and highly motivated to work - looking for my junior position!
+              </p>
+              <span class="d-flex mt-3">
+                <a  class="cta-btn cta-btn--resume" target="_blank" href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:8c22157f-423d-4bb3-b55e-becfcf133102#pageNum=1">
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">
+            Projects
+          </h2>
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">RoboFriends</h3>
+                <div>
+                  <p class="mb-4">
+                    A robots search app build with React and robohash API
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://natan7366.github.io/robofriends/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/natan7366/robofriends">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/project-1.png"/>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Background-Generator</h3>
+                <div>
+                  <p class="mb-4">
+                    A cool background generator built with html, css, javascript & DOM manipulation  
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://natan7366.github.io/Background-Generator/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/natan7366/Background-Generator">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded"> 
+                    <img class="img-fluid" src="./assets/project-2.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Smart Brain Face Detection</h3>
+                <div>
+                  <p class="mb-4">
+                    A face-detection app build with React, Node, PostgreSQL and Clarifai API.<br>Just enter an image link and let the smart brain detect your face ! 
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://natan7366.github.io/Smart-Brain-Face-Detection/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/natan7366/Smart-Brain-Face-Detection">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/project-3.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Tech stack Section **** -->
+     
+        <div class="techstack">
+          <h2 class="section-title">My Tech Stack</h2>
+          <div class="grid-container">
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-html-5-96.png" width="100%">
+              </div>
+              <div class="title">HTML</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-css3-96.png" width="100%">
+              </div>
+              <div class="title">CSS</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-javascript-96.png" width="100%">
+              </div>
+              <div class="title">javascript</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/react-logo.png" width="100%">
+              </div>
+              <div class="title">React.js</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-nodejs-96.png" width="100%">
+              </div>
+              <div class="title">Node.js</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-postgresql-96.png" width="100%">
+              </div>
+              <div class="title">PostgreSQL</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-npm-96.png" width="100%">
+              </div>
+              <div class="title">NPM</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-git-96.png" width="100%">
+              </div>
+             <div class="title">Git</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-github-96.png" width="100%">
+              </div>
+             <div class="title">Github</div></div>
+            <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-python-96.png" width="100%">
+              </div>
+             <div class="title">Python</div></div>
+          </div>
+        </div>
+          
+    <!-- </section> -->
+    <!-- /END Tech stack Section  -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          Contact
+        </h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            PHONE: 054-4496765
+          </p>
+          <a
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=natan7366@gmail.com&su=subject%20"
+            >Send an Email</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a href="https://stackoverflow.com/users/13525046/nathan-barel?tab=profile" target="_blank">
+            <i class="fa fa-stack-overflow fa-inverse"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nathan-barel-1b462289/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a href="https://github.com/natan7366?tab=repositories" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- If you give me some credit, will be huge for me :) -->
+        <p class="footer__text">
+          © 2020 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
+          </a>
+        </p>
+        
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+  </body>
+</html>
