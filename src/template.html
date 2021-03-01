@@ -16,6 +16,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- Put here your site title -->
     <title>Nathan Barel | Developer</title>
@@ -76,6 +80,19 @@
           text-align: center;
       }
 
+      .techitem .title:hover {
+        animation: shakeY; 
+        animation-duration: 2s; 
+      }
+
+      .section-title:hover {
+        animation: heartBeat; 
+        animation-duration: 1s; 
+      }
+
+
+      /* class="animate__animated animate__bounce" */
+
       @media only screen and (max-width: 1025px) {
         .techitem {
             justify-content: space-around;
@@ -105,7 +122,7 @@
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Nathan Barel</span>
+          Hi, my name is <span  class="text-color-main">Nathan Barel</span>
           <br />
           A web developer
         </h1>
@@ -274,12 +291,17 @@
               <div class="logo">
                 <img src="./assets/tech icons/icons8-javascript-96.png" width="100%">
               </div>
-              <div class="title">javascript</div></div>
+              <div class="title">Javascript</div></div>
             <div class="techitem">
               <div class="logo">
                 <img src="./assets/tech icons/react-logo.png" width="100%">
               </div>
-              <div class="title">React.js</div></div>
+              <div class="title">React</div></div>
+              <div class="techitem">
+                <div class="logo">
+                  <img src="./assets/tech icons/icons8-redux-96.png" width="100%">
+                </div>
+                <div class="title">Redux</div></div>
             <div class="techitem">
               <div class="logo">
                 <img src="./assets/tech icons/icons8-nodejs-96.png" width="100%">
@@ -290,6 +312,11 @@
                 <img src="./assets/tech icons/icons8-postgresql-96.png" width="100%">
               </div>
               <div class="title">PostgreSQL</div></div>
+              <div class="techitem">
+                <div class="logo">
+                  <img src="./assets/tech icons/icons8-mongodb-96.png" width="100%">
+                </div>
+                <div class="title">MongoDB</div></div>
             <div class="techitem">
               <div class="logo">
                 <img src="./assets/tech icons/icons8-npm-96.png" width="100%">
@@ -306,6 +333,11 @@
               </div>
              <div class="title">Github</div></div>
             <div class="techitem">
+              <div class="logo">
+                <img src="./assets/tech icons/icons8-heroku-96.png" width="100%">
+              </div>
+             <div class="title">Heroku</div></div>
+             <div class="techitem">
               <div class="logo">
                 <img src="./assets/tech icons/icons8-python-96.png" width="100%">
               </div>
